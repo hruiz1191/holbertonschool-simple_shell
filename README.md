@@ -46,5 +46,5 @@ ___
 ___
 # AUTHORS
 This shell was created by:
-* Lucy ann [TGithub](https://www.ejemplo.com)
+* Lucy ann [Github](https://github.com/lucyann78)
 * Hector Ruiz [Github](https://github.com/hruiz1191/)
