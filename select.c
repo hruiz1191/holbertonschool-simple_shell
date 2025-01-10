@@ -36,7 +36,7 @@ char *_getenv(const char *name)
 			if (result == NULL)
 			{
 				free(env_cpy);
-				printOops();
+				printerrorm();
 			}
 
 			free(env_cpy);
