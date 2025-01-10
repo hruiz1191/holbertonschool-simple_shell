@@ -47,7 +47,7 @@ char **get_argv(char *cmd, int argc)
 		if (argv[i] == NULL)
 		{
 			free_arr(argv);
-			printOops();
+			printerrorm();
 		}
 
 		token = strtok(NULL, sep);
