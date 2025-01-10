@@ -56,7 +56,7 @@ char *_getenv(const char *name)
  * Return: The path to the file if it exists, otherwise NULL
  */
 
-char *_which(char *file)
+char *_select(char *file)
 {
 	struct stat status;
 	char *env_path, *pathCopy, *filepath, *dir;
@@ -128,13 +128,13 @@ int _env(int pid)
 
 
 /**
- * printOops - Print an error message after a failed malloc
+ * printerrorm - Print an error message after a failed malloc
  *
  * Return: (void)
  */
 
 void printOops(void)
 {
-	fprintf(stderr, "Oops, something went wrong :(\nPlease try again\n");
+	fprintf(stderr, "Something went wrong :(\nPlease try again\n");
 	exit(98);
 }
