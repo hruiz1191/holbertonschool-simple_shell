@@ -15,9 +15,9 @@ char **get_argv(char *, int);
 void free_arr(char **);
 void free_argv(int argc, char **argv);
 char *_getenv(const char *);
-char *_which(char *);
+char *_select(char *);
 int execute(int, char *, char **);
 int _env(int);
-void printOops(void);
+void printerrorm(void);
 
 #endif
