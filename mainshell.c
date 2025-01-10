@@ -24,7 +24,7 @@ int main(void)
 		}
 		cmd_cpy = strdup(cmd);
 		if (cmd_cpy == NULL)
-			free(cmd), printOops();
+			free(cmd), printerrorm();
 		argc = get_argc(cmd_cpy);
 		if (argc == 0)
 		{
@@ -35,7 +35,7 @@ int main(void)
 		argv = get_argv(cmd, argc);
 		free(cmd), free(cmd_cpy), cmd = NULL, cmd_cpy = NULL;
 
-		file = _which(argv[0]);
+		file = _select(argv[0]);
 		if (file == NULL)
 			free_arr(argv), exit(127);
 
