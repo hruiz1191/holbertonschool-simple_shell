@@ -74,7 +74,7 @@ char *_select(char *file)
 
 	pathCopy = strdup(env_path);
 	if (pathCopy == NULL)
-		free(env_path), printOops();
+		free(env_path), printerrorm();
 
 	free(env_path), env_path = NULL;
 	dir = strtok(pathCopy, ":");
@@ -133,7 +133,7 @@ int _env(int pid)
  * Return: (void)
  */
 
-void printOops(void)
+void printerrorm(void)
 {
 	fprintf(stderr, "Something went wrong :(\nPlease try again\n");
 	exit(98);
