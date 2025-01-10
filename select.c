@@ -18,7 +18,7 @@ char *_getenv(const char *name)
 		char *env_cpy = strdup(environ[i]);
 
 		if (env_cpy == NULL)
-			printOops();
+			printerrorm();
 
 		token = strtok(env_cpy, "=");
 		if (strcmp(token, name) == 0)
